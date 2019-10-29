@@ -1,5 +1,5 @@
 {
-  "name": "backbone-react",
+  "name": "backbone-react-project",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -42,5 +42,4 @@
   "engines": {
     "node": "12.13.0"
   }
-
 }

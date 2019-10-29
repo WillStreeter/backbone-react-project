@@ -1,4 +1,4 @@
-# react-ip-interact
+# backbone-react-project
 IP locations from USA
 
 ### How to install and build this app
@@ -7,34 +7,40 @@ IP locations from USA
 
 ##### 1) If you have docker and can run Make files
   ```
-   $> git clone https://github.com/WillStreeter/react-ip-interact.git
-   $> cd react-ip-interact
-   $react-ip-interact > make start-dev
+   $> git clone https://github.com/WillStreeter/backbone-react-project.git
+   $> cd backbone-react-project/client
+   // build node_modules
+   $ backbone-react-project/client > npm install
+   // to stand the site up we will return to the root directory
+   $backbone-react-project > make start-dev
     // open another terminal tab to view logs
-    // from react-ip-interact
-   $react-ip-interact > cd client
-   $react-ip-interact/client > make logs
+    // from backbone-react-project
+   $backbone-react-project > cd client
+   $backbone-react-project/client > make logs
    // to stop docker containers and bring the env down 
-   // from react-ip-interact
-   $react-ip-interact > make stop-dev
+   // from backbone-react-project
+   $backbone-react-project > make stop-dev
 ```
 #### 2) If you have docker and do Not Have the ability to run Make files
   ```
-   $> git clone https://github.com/WillStreeter/react-ip-interact.git
-   $> cd react-ip-interact
-   $react-ip-interact> docker-compose up -d
+   $> git clone https://github.com/WillStreeter/backbone-react-project.git
+   $> cd backbone-react-project/client
+   // build node_modules
+   $ backbone-react-project/client > npm install
+   // to stand the site up we will return to the root directory
+   $backbone-react-project> docker-compose up -d
     // open another terminal tab to view logs
-    // from react-ip-interact
-   $react-ip-interact > make logs
+    // from backbone-react-project
+   $backbone-react-project > make logs
    // to stop docker containers and bring the env down 
    // return the original tab
-   $react-ip-interact > docker-compose down
+   $backbone-react-project > docker-compose down
 ```
 
 ##### 3) If you choose to run node localing on your machine
 ```
-   $> git clone https://github.com/WillStreeter/react-ip-interact.git
-   $> cd react-ip-interact/client
+   $> git clone https://github.com/WillStreeter/backbone-react-project.git
+   $> cd backbone-react-project/client
    $> npm install
    $> npm run start
 ```
