@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+
+  client:
+    build:
+      context: ./client/.
+      dockerfile: ./Dockerfile.dev
+    image: local-client-web-img
+    container_name: local-client-web-container
+    networks:
+      - frontend
+    ports:
+      - "3000:3000"
+    working_dir: "/usr/src/app"
+    volumes:
+      - "./client/:/usr/src/app"
+
+networks:
+  frontend:
+    driver: bridge
