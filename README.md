@@ -3,7 +3,7 @@ IP locations from USA
 
 ### How to install and build this app
 
-**This was build with node LTS 12.13.0**
+**This was built with node LTS 12.13.0**
 
 ##### 1) If you have docker and can run Make files
   ```
