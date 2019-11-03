@@ -1,7 +1,7 @@
 import {  ofType } from "redux-observable";
 import { of } from 'rxjs';
 import { mergeMap, map, catchError } from "rxjs/operators";
-import  ipApi from "../../api_serivces/ipApiServices";
+import  ipApi from "../../api_services/ipApiServices";
 import { IP_API_KEY_TEST,  } from "../../../business_layer/data_layer_services/ipApiCheck";
 import { getDistanceInMiles }  from "../../../business_layer/data_layer_services/distanceCalculator";
 import {

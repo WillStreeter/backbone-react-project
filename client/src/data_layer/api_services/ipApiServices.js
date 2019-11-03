@@ -8,4 +8,4 @@ const ipApi = {
      }
 };
 
-export default ipApi;
+export default { ipApi };

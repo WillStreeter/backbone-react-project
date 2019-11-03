@@ -9,7 +9,7 @@ import {
 
 
 // Reducer
-const initialState = {
+export const initialState = {
   loadingIpInfo: false,
   validApiKey: undefined,
   apiKeyError: null,
